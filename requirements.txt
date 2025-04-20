@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Apr 20 15:26:08 2025
+
+@author: Lenovo
+"""
+
+streamlit
+pillow
+numpy
+tensorflow
