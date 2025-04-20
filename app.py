@@ -4,13 +4,12 @@ Created on Sun Apr 20 13:53:11 2025
 
 @author: Lenovo
 """
+
 import streamlit as st
-import tensorflow as tf
-from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, decode_predictions, preprocess_input
+from tensorflow.keras.applications.mobilenet_v2 import decode_predictions, preprocess_input
 from tensorflow.keras.preprocessing import image
 import numpy as np
 from PIL import Image
-import io
 import pickle
 
 #load model
@@ -42,8 +41,3 @@ if upload_file is not None:
     st.subheader("Prediction:")
     for i,pred in enumerate(top_preds):
         st.write(f"{i+1}. **{pred[1]}** - {round(pred[2]*100,2)}%")
-
-    
-
-    
-    
